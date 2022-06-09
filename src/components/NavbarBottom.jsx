@@ -18,15 +18,13 @@ export const NavbarBottom = () => {
         value={value}
         onChange={(event, newValue) => {
           setValue(newValue);
-        }}
-      >
+        }}>
         <BottomNavigationAction
           icon={
             <NavLink to="/home" style={{ color: "var(--white)" }}>
               <CottageIcon />
             </NavLink>
-          }
-        />
+          }/>
         <BottomNavigationAction icon={<SearchIcon />} />
         <BottomNavigationAction icon={<AddIcon />} />
         <BottomNavigationAction icon={<NotificationsIcon />} />
