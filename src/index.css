@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
 
 :root {
   --white: #f8f8f8;
@@ -10,7 +10,7 @@
 
 body {
   background: var(--white);
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: "Balsamiq Sans", cursive;
 }
 
 .avatars,
@@ -36,7 +36,7 @@ div.css-2s90m6-MuiAvatar-root:first-child {
   object-fit: cover;
 }
 
-.avatar-title > span{
+.avatar-title > span {
   padding-right: 10px;
   font-size: 12px;
 }
@@ -56,4 +56,12 @@ div.css-2s90m6-MuiAvatar-root:first-child {
 .icons-data > small {
   font-size: 10px;
   margin-top: 5px;
+}
+
+.css-16lloyr-MuiBottomNavigation-root {
+  background-color: var(--pink-very-dark) !important;
+}
+
+.css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root.Mui-selected, .css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root {
+  color: var(--white) !important;
 }

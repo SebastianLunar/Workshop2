@@ -20,7 +20,7 @@ export const CardHome = ({ data }) => {
       </div>
       <div style={{ padding: "10px 0 10px 5px" }}>
         <img
-          src={data?.foto1}
+          src={data?.fotos[0].image}
           alt={data?.name}
           style={{ width: "100%" }}
         />
