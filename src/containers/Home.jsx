@@ -14,11 +14,8 @@ export const Home = () => {
     });
   }, []);
 
-  console.log(data);
   const jennie = data.find((item) => item.id === 1);
   const kim = data.find((item) => item.id === 3);
-  console.log(jennie);
-  console.log(kim);
 
   return (
     <>

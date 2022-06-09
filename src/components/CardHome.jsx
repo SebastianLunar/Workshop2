@@ -3,7 +3,6 @@ import { TbMessageCircle2 } from "react-icons/tb";
 import { TbSend } from "react-icons/tb";
 
 export const CardHome = ({ data }) => {
-  console.log(data)
   return (
     <div style={{ padding: "20px 5px" }}>
       <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
