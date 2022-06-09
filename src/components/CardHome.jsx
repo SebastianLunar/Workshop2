@@ -5,10 +5,10 @@ import { TbSend } from "react-icons/tb";
 export const CardHome = ({ data }) => {
   return (
     <div style={{ padding: "20px 5px" }}>
-      <div style={{ display: "flex", alignContent: "center", gap: "5px" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
         <img
-          src={data[0]?.perfil}
-          alt={data[0]?.name}
+          src={data?.perfil}
+          alt={data?.name}
           style={{
             width: "24px",
             height: "24px",
@@ -16,12 +16,12 @@ export const CardHome = ({ data }) => {
             borderRadius: "50%",
           }}
         />
-        <span style={{ fontWeight: "bold" }}>{data[0]?.name}</span>
+        <span style={{ fontWeight: "bold" }}>{data?.name}</span>
       </div>
       <div style={{ padding: "10px 0 10px 5px" }}>
         <img
-          src={data[0]?.portada}
-          alt={data[0]?.name}
+          src={data?.fotos[0].image}
+          alt={data?.name}
           style={{ width: "100%" }}
         />
         <div
@@ -53,7 +53,7 @@ export const CardHome = ({ data }) => {
               marginRight: "5px",
             }}
           >
-            {data[0]?.name}
+            {data?.name}
           </span>
           <p style={{ display: "inline", fontSize: "12px" }}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
