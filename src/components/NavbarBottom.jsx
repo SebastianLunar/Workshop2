@@ -30,7 +30,7 @@ export const NavbarBottom = () => {
         <BottomNavigationAction icon={<SearchIcon />} />
         <BottomNavigationAction icon={<AddIcon />} />
         <BottomNavigationAction icon={<NotificationsIcon />} />
-      </BottomNavigation> 
+      </BottomNavigation>
     </Box>
   );
 };
