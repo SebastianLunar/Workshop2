@@ -4,6 +4,7 @@ import { CardHome } from "../components/CardHome";
 import { AvatarHome } from "../components/AvatarHome";
 import { NavbarTopHome } from "../components/NavbarTopHome";
 import { GetData } from "../helpers/GetData";
+import { NavbarBottom } from "../components/NavbarBottom";
 
 export const Home = () => {
   const [data, setData] = useState([]);
@@ -23,6 +24,7 @@ export const Home = () => {
       <AvatarHome data={data} />
       <CardHome data={jennie} />
       <CardHome data={kim} />
+      <NavbarBottom />
     </>
   );
 };
