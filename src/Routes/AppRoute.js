@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from '../containers/Login';
 import Register from '../containers/Register';
 import Detail from '../components/Detail';
-import { Home } from './containers/Home';
+import { Home } from '../containers/Home';
 
 const AppRoute = () => {
     return (
@@ -17,6 +17,7 @@ const AppRoute = () => {
             </Routes>
             </BrowserRouter>
         </div>
+    )
+}
 
-
-    )}
+export default AppRoute;
