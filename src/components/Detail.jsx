@@ -42,7 +42,7 @@ const Product = () => {
         let value = await GetData("usuarios/1")
         setData(value)
     }
-    console.log(data)
+    console.log(data.fotos[0])
     useEffect(() => {
         getting()
     }, [])
@@ -51,17 +51,17 @@ const Product = () => {
         <div>
             <BackButton />
             <div>
-                <IMGD src={data.foto1} alt="" />
+                <IMGD src={data.fotos[0].image} alt="" />
             </div>
             <DIVstats>
-                <img src={data.profile} alt="" />
+                <img src={data.perfil} alt="" />
                 <h6>{data.name}</h6>
                 <Stats><img src={like} alt="" /><br /><span>108K</span></Stats>
                 <Stats><img src={comment} alt="" /><br /><span>54K</span></Stats>
                 <Stats><img src={share} alt="" /><br /><span>2K</span></Stats>
             </DIVstats>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet gravida tortor in habitant pellentesque a quisque. Nisl diam, amet eu est libero dignissim donec nec. Fames bibendum porta phasellus neque. Integer et lectus amet, vitae facilisis laoreet feugiat pellentesque accumsan. Turpis eget laoreet turpis urna tincidunt nisl, integer nisl. Id nec tortor vel, dui, lectus. Donec consequat dolor cursus sed pellentesque etiam ipsum, id quam. Tincidunt eu duis ullamcorper posuere augue. Arcu senectus elit, semper diam porta. Platea tempus augue ante pellentesque dictum sed vitae. Auctor dui ac bibendum lacus.</p>
-            <div style={{ display: "flex", padding: "1rem" }}>
+            <div style={{ display: "flex", padding: "1rem", width:"333px", border: "solid black", borderRadius: "20px" }}>
                 <img src="" alt="" />
                 <input type="text" placeholder='Write comment as ' />
                 <img src={enter} alt="" />
