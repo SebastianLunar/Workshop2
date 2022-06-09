@@ -4,6 +4,7 @@ import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import KeyRoundedIcon from '@mui/icons-material/KeyRounded';
 import VisibilityRoundedIcon from '@mui/icons-material/VisibilityRounded';
 import { Link, useNavigate } from 'react-router-dom';
+import { Button1 } from '../style/styles';
 
 const Login = () => {
     const url ="https://equipo5workshop2.herokuapp.com/usuarios"
@@ -76,7 +77,7 @@ const Login = () => {
                             </IconButton>
                         }
                     />
-                    <Button type='submit'  variant="outlined">Entrar</Button>
+                    <Button1 type='submit'  variant="outlined">Entrar</Button1>
                     <Link to="/register">No tienes cuenta? Registrate aquí</Link>
                 </Box>
                

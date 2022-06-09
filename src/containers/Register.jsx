@@ -2,6 +2,7 @@ import { Box, Button, Input } from '@mui/material';
 import axios from 'axios';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Button1 } from '../style/styles';
 
 const Register = () => {
     const url = "https://equipo5workshop2.herokuapp.com/usuarios"
@@ -32,9 +33,11 @@ const Register = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post(url, users)
-            .then(() => reset())
-            alert('Registrado')
+        // axios.post(url, users)
+        //     .then(() => reset())
+        //     alert('Registrado')
+
+            
     }
 
     
@@ -57,7 +60,7 @@ const Register = () => {
                             value={users.name}
                             placeholder="Nombre Completo"
                             type="text"
-
+                            required
                         />
                         <Input
                             name='email'
@@ -66,9 +69,10 @@ const Register = () => {
                             onChange={handleChange}
                             placeholder="Email"
                             type="email"
-
+                            required
                         />
                         <Input
+                        required
                             name='password'
                             value={users.password}
                             size="sm"
@@ -76,7 +80,7 @@ const Register = () => {
                             type="password"
                             onChange={handleChange}
                         />
-                        <Button type='submit' variant="outlined">Registrar</Button>
+                        <Button1 type='submit' variant="outlined">Registrar</Button1>
                         <Link to="/">Ya tienes cuenta? Entra aquí</Link>
                     </Box>
                 </form>
