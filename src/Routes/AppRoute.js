@@ -4,8 +4,9 @@ import Login from "../containers/Login";
 import Register from "../containers/Register";
 import Detail from "../components/Detail";
 import { Home } from "../containers/Home";
+import { NavbarBottom } from "../components/NavbarBottom";
 
-export const AppRoute = () => {
+const AppRoute = () => {
   return (
     <div>
       <BrowserRouter>
@@ -15,7 +16,10 @@ export const AppRoute = () => {
           <Route path="/register" element={<Register />} />
           <Route path="/detail/:id" element={<Detail />} />
         </Routes>
+        <NavbarBottom />
       </BrowserRouter>
     </div>
   );
 };
+
+export default AppRoute;
