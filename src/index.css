@@ -1,0 +1,56 @@
+:root {
+  --white: #f8f8f8;
+  --orange: #ffbc74;
+  --pink: #ff74fc;
+  --pink-dark: #ff74b7;
+  --pink-very-dark: #ff7674;
+}
+
+body {
+  background: var(--white);
+}
+
+.avatars,
+.avatar-title {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+
+.avatars > div {
+  border: 2px solid var(--pink);
+  width: 60px;
+  height: 60px;
+}
+
+div.css-2s90m6-MuiAvatar-root:first-child {
+  background-image: url("https://wallup.net/wp-content/uploads/2016/01/21079-Asian-Korean-women-748x421.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.avatars > div > img {
+  object-fit: cover;
+}
+
+.avatar-title > span{
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+.avatar-title > span:last-child {
+  padding-right: 0;
+  margin: 0;
+}
+
+.icons-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-data > small {
+  font-size: 10px;
+  margin-top: 5px;
+}
