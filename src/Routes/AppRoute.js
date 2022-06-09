@@ -19,7 +19,9 @@ const AppRoute = () => {
             </Routes>
             </BrowserRouter>
         </div>
+    )
+}
 
 
-    )}
+
     export default AppRoute;
