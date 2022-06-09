@@ -3,7 +3,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from '../containers/Login';
 import Register from '../containers/Register';
 import Detail from '../components/Detail';
-import { Home } from './containers/Home';
+import { Home } from '../containers/Home';
+import Perfil from '../containers/Perfil';
 
 const AppRoute = () => {
     return (
@@ -14,9 +15,11 @@ const AppRoute = () => {
                 <Route path="/home" element={<Home />}/>
                 <Route path="/register" element={<Register/>}/>
                 <Route path="/detail/:id" element={<Detail />} />
+                <Route path="/perfil" element={<Perfil/>}/>
             </Routes>
             </BrowserRouter>
         </div>
 
 
     )}
+    export default AppRoute;
